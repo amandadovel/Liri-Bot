@@ -1,7 +1,8 @@
 # Liri-Bot 🤖
 
  LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
-<iframe src="https://giphy.com/embed/d7HRdH1OIsHe8TpTuS" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nodejs-web-dev-liri-bot-d7HRdH1OIsHe8TpTuS">via GIPHY</a></p>
+
+<a href="https://giphy.com/gifs/nodejs-web-dev-liri-bot-d7HRdH1OIsHe8TpTuS"><img src="https://giphy.com/embed/d7HRdH1OIsHe8TpTuS" width="480" height="300"/></a>
 
 ## Functionality 💪
 #### Here's how the app works: 
@@ -41,6 +42,7 @@ axios.get(queryURL)
 <img src="concert-this.jpg" alt="screen capture of concert.js">
 
 2. Get song data 🎵
+
 `node liri.js spotify-this-song '<song name here>'`
 
     2.1. This will show the following information about the song in your terminal/bash window
