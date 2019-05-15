@@ -1,7 +1,7 @@
 # Liri-Bot 🤖
 
  LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
-<iframe src="https://giphy.com/embed/d7HRdH1OIsHe8TpTuS" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nodejs-web-dev-liri-bot-d7HRdH1OIsHe8TpTuS">via GIPHY</a></p>
+<img src="https://giphy.com/embed/d7HRdH1OIsHe8TpTuS" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen><a href="https://giphy.com/gifs/nodejs-web-dev-liri-bot-d7HRdH1OIsHe8TpTuS">via GIPHY</a>
 
 ## Functionality 💪
 #### Here's how the app works: 
