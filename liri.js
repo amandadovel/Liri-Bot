@@ -12,6 +12,7 @@ userInput = userInput.join(" ") || null;
 
 var concertThis = require("./commands/concert");
 var spotifyThis = require("./commands/spotify");
+var movieThis = require("./commands/movie");
 
 startLiri();
 
@@ -25,7 +26,7 @@ function startLiri() {
                 spotifyThis(command, userInput, keys.spotify, actionLog, errorLog);
                 break;
             case "movie-this":
-                console.log("movie");
+                movieThis(command, userInput, keys.omdb, actionLog, errorLog);
                 break;
             case "do-what-it-says":
                 console.log("dwis");

@@ -38,7 +38,7 @@ var spotifyThis = function (command, userInput, keys, actionLog, errorLog) {
         } else {
             console.log("Sorry, no song data was found for " + userInput + ". Try another song!");
         }
-
+        actionLog(userInput);
     })
 
 }
