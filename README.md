@@ -1,11 +1,12 @@
 # Liri-Bot 🤖
 
  LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
-<img src="https://giphy.com/embed/d7HRdH1OIsHe8TpTuS" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen><a href="https://giphy.com/gifs/nodejs-web-dev-liri-bot-d7HRdH1OIsHe8TpTuS">via GIPHY</a>
+<iframe src="https://giphy.com/embed/d7HRdH1OIsHe8TpTuS" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nodejs-web-dev-liri-bot-d7HRdH1OIsHe8TpTuS">via GIPHY</a></p>
 
 ## Functionality 💪
 #### Here's how the app works: 
 1. Get concert data 🎸
+
 `node liri.js concert-this <artist/band name here>`
     1.1. This will search the Bands in Town Artist Events API ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp") for an artist and render the following information about each event to the terminal:
         - Name of the venue
@@ -69,6 +70,7 @@ if (songs.length > 0) {
 <img src="spotify-this.jpg" alt="screen capture of spotify.js">
 
 3. Get movie data 🎬
+
 `node liri.js movie-this '<movie name here>'`
 
     3.1. This will output the following information to your terminal/bash window:
@@ -107,6 +109,7 @@ if (movie.Response === "False") {
 <img src="movie-this.jpg" alt="screen capture of movie.js">
 
 4. Do what it says 💥
+
  `node liri.js do-what-it-says`
 
     4.1 Using the fs Node package, LIRI will take the text inside of `random.txt` and then use it to call one of LIRI's commands.
