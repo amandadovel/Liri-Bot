@@ -13,10 +13,11 @@ userInput = userInput.join(" ") || null;
 var concertThis = require("./commands/concert");
 var spotifyThis = require("./commands/spotify");
 var movieThis = require("./commands/movie");
+var dwis = require("./commands/dwis");
 
-startLiri();
+startLiri(command, userInput);
 
-function startLiri() {
+function startLiri(command, userInput) {
     if (command !== null) {
         switch (command) {
             case "concert-this":
@@ -29,7 +30,7 @@ function startLiri() {
                 movieThis(command, userInput, keys.omdb, actionLog, errorLog);
                 break;
             case "do-what-it-says":
-                console.log("dwis");
+                dwis(command, userInput, actionLog, errorLog, startLiri, fs);
                 break;
             default:
                 console.log("\n##############\n");
