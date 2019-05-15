@@ -11,6 +11,7 @@ var userInput = process.argv.slice(3);
 userInput = userInput.join(" ") || null;
 
 var concertThis = require("./commands/concert");
+var spotifyThis = require("./commands/spotify");
 
 startLiri();
 
@@ -21,7 +22,7 @@ function startLiri() {
                 concertThis(command, userInput, keys.omdb, moment, actionLog, errorLog);
                 break;
             case "spotify-this-song":
-                console.log("spotify");
+                spotifyThis(command, userInput, keys.spotify, actionLog, errorLog);
                 break;
             case "movie-this":
                 console.log("movie");
