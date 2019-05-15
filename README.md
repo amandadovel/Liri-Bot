@@ -5,7 +5,7 @@
 
 ## Functionality 💪
 #### Here's how the app works: 
-1. Get concert data 
+1. Get concert data 🎸
 `node liri.js concert-this <artist/band name here>`
     1.1. This will search the Bands in Town Artist Events API ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp") for an artist and render the following information about each event to the terminal:
         - Name of the venue
@@ -37,8 +37,9 @@ axios.get(queryURL)
     })
 ```
 
+<img src="concert-this.jpg" alt="screen capture of concert.js">
 
-2. Get song data 
+2. Get song data 🎵
 `node liri.js spotify-this-song '<song name here>'`
 
     2.1. This will show the following information about the song in your terminal/bash window
@@ -65,7 +66,9 @@ if (songs.length > 0) {
     console.log("\n----------------------\n");
 ```
 
-3. Get movie data 
+<img src="spotify-this.jpg" alt="screen capture of spotify.js">
+
+3. Get movie data 🎬
 `node liri.js movie-this '<movie name here>'`
 
     3.1. This will output the following information to your terminal/bash window:
@@ -101,8 +104,9 @@ if (movie.Response === "False") {
     console.log("\n----------------------\n");
 }
 ```
+<img src="movie-this.jpg" alt="screen capture of movie.js">
 
-4. Do what it says
+4. Do what it says 💥
  `node liri.js do-what-it-says`
 
     4.1 Using the fs Node package, LIRI will take the text inside of `random.txt` and then use it to call one of LIRI's commands.
@@ -128,32 +132,45 @@ if (content.length === 1) {
 }
 ```
 
+<img src="dwis.jpg" alt="screen capture of dwis.js">
+
 
 ## Getting Started 🏁
 
 These instructions will get you a copy of the project up and running on your local machine for grading and testing purposes. 
 
-1. clone repository. 
-2. open repository in your IDE of choice.
+1. Clone repository. Click on the clone button next to the repository (clone with SSH). 
+2. Open Terminal and git clone (paste) into directory of your choice. 
+3. Open folder in VS Code. 
+4. Each JS file is stored in the commands directory. Open the `liri.js` to see the main logic connecting to each of the other files.
+5. Open `concert.js` for bands in town information, `movie.js` for omdb information on movies, `spotify.js` for music/song information, `dwis.js` for the `do-what-it-says` logic, `keys.js` stores the id's and keys for each of the api's used. Export makes properties and methods available outside the module file.
+6. `.gitignore` stores the files needed for running the application but are kept hidden to avoid unneccessarily pushing them to github. 
+7. `error.txt` logs everytime there is an error with time and date of that error. 
+8. `log.txt` logs everything typed into the terminal
 
 
-## Pre-Requisites 
+## Pre-Requisites ✔️
 
-1. NPM 
-2. Node
-3. Create .env file. 
+1. Node - use this site to install node into your computer: https://nodejs.org/en/download/
+    *to check if node is installed type node -v into your terminal. If installed it will print the version number on the screen.
+2. NPM - Node Package Manager. Use this site to assist in downloading packages or modules: https://www.npmjs.com/
+3. Create .env file with NPM install. Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
+```
+npm install dotenv
+```
 
 
 ## Built With 🔧
 
 * [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js
+* [Node] (https://nodejs.org/en/download/) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. 
+* [Javascript] (https://www.javascript.com/) -JavaScript is the programming language of HTML and the Web
+* [JSON] (https://www.json.org/) - Javascript object notation, syntax for storing and exchanging information. 
 
 
 
-## Authors ⌨️
-
-
-* **Amanda Dovel** - [amandadovel](https://github.com/amandadovel)
+## Author ⌨️
+*** Amanda Dovel *** - [amandadovel](https://github.com/amandadovel)
 
 ## Acknowledgments 🌟
 

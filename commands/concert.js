@@ -4,7 +4,7 @@ var axios = require("axios");
 
 var concertThis = function (command, userInput, key, moment, actionLog, errorLog) {
     if (userInput === null) {
-        userInput = "Pink Floyd";
+        userInput = "Bassnectar";
     }
 
     var query = userInput;
