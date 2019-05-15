@@ -1,0 +1,40 @@
+var axios = require('axios');
+
+var movieThis = function (command, userInput, keys, actionLog, errorLog) {
+    if (userInput === null) {
+        userInput = "Mr. Nobody";
+    }
+    console.log(userInput)
+    var queryURL = "http://omdbapi.com/?apikey=" + keys.id + "&t=" + userInput;
+    axios.get(queryURL)
+        .then(function (response) {
+            var movie = response.data;
+            console.log(movie.Response)
+            if (movie.Response === "False") {
+                console.log("Sorry, no movie data found for " + userInput + ". Try another movie title.")
+            } else {
+                console.log("\n----------------------\n");
+                console.log(command);
+                console.log(userInput);
+                console.log("\n----------------------\n");
+                console.log("\n****************\n");
+                console.log("Title:", movie.Title)
+                console.log("Release Year:", movie.Year)
+                console.log("IMDB Rating:", movie.Ratings[0].Value)
+                console.log("Rotten Tomato Rating:", movie.Ratings[1].Value)
+                console.log("Production Country:", movie.Country)
+                console.log("Language:", movie.Language)
+                console.log("Plot:", movie.Plot)
+                console.log("Actors:", movie.Actors)
+                console.log("\n****************\n");
+                console.log("\n----------------------\n");
+            }
+
+        })
+        .catch(function (err) {
+            errorLog(userInput, err);
+        })
+
+    actionLog(userInput);
+}
+module.exports = movieThis;
