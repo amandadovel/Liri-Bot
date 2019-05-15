@@ -33,3 +33,11 @@
 05/14/2019 07:58 PM,do-what-it-says,;
 05/14/2019 08:09 PM,concert-this,drake;
 05/14/2019 08:09 PM,spotify-this-song,The Sign;
+05/15/2019 11:37 AM,concert-this,Bassnectar;
+05/15/2019 04:15 PM,spotify-this-song,no woman no cry;
+05/15/2019 04:16 PM,movie-this,Gladiator;
+05/15/2019 04:17 PM,movie-this,gladiator;
+05/15/2019 04:18 PM,do-what-it-says,"I Want it That Way";
+05/15/2019 04:18 PM,do-what-it-says,"I Want it That Way";
+05/15/2019 04:25 PM,spotify-this-song,freak beat for the beat freaks;
+05/15/2019 04:25 PM,spotify-this-song,piggy;
