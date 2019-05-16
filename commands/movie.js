@@ -1,4 +1,4 @@
-// create variable axios to access omdb 
+// require axios to access movie data 
 var axios = require('axios');
 
 // create movieThis variable to connect to liri.js file and take in command, input, keys 

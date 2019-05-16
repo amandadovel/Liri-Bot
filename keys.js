@@ -1,4 +1,5 @@
 // stores keys for spotify and bands in town api 
+// exports allows properties and modules to be available outside of file
 
 exports.spotify = {
     id: process.env.SPOTIFY_ID,

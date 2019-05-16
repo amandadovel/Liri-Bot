@@ -1,4 +1,4 @@
-// requires .env, moment, and fs to read api keys, connect to real and file stystem from computer. 
+// requires .env, moment, and fs to read api keys, connect to real time and access file stystem from computer. 
 require('dotenv').config();
 var keys = require("./keys");
 
