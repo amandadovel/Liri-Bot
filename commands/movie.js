@@ -1,10 +1,16 @@
+// create variable axios to access omdb 
 var axios = require('axios');
+
+// create movieThis variable to connect to liri.js file and take in command, input, keys 
+// also logs everything put in terminal and errors to corresponding txt files
 
 var movieThis = function (command, userInput, keys, actionLog, errorLog) {
     if (userInput === null) {
         userInput = "Mr. Nobody";
     }
     console.log(userInput)
+
+    // create queryURL to access api key 
     var queryURL = "http://omdbapi.com/?apikey=" + keys.id + "&t=" + userInput;
     axios.get(queryURL)
         .then(function (response) {
@@ -31,10 +37,16 @@ var movieThis = function (command, userInput, keys, actionLog, errorLog) {
             }
 
         })
+
+        // catch and log errors
+
         .catch(function (err) {
             errorLog(userInput, err);
         })
+    // logs terminal input to log.txt
 
     actionLog(userInput);
 }
+
+// module.exports makes properties and modules available outside of file
 module.exports = movieThis;
