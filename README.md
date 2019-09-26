@@ -168,9 +168,9 @@ npm install dotenv
 ## Built With 🔧
 
 * [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js
-* [Node] (https://nodejs.org/en/download/) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. 
-* [Javascript] (https://www.javascript.com/) -JavaScript is the programming language of HTML and the Web
-* [JSON] (https://www.json.org/) - Javascript object notation, syntax for storing and exchanging information. 
+* [Node](https://nodejs.org/en/download/) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. 
+* [Javascript](https://www.javascript.com/) -JavaScript is the programming language of HTML and the Web
+* [JSON](https://www.json.org/) - Javascript object notation, syntax for storing and exchanging information. 
 
 
 
